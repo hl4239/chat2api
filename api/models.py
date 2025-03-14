@@ -16,8 +16,8 @@ model_proxy = {
     "claude-3-opus": "claude-3-opus-20240229",
     "claude-3-sonnet": "claude-3-sonnet-20240229",
     "claude-3-haiku": "claude-3-haiku-20240307",
-    "deepseek-v3":"gpt_175B_0404",
-    "deepseek-R1":"gpt_175B_0404",
+    "deepseek-chat":"gpt_175B_0404",
+    "deepseek-reasoner":"gpt_175B_0404",
 }
 
 model_system_fingerprint = {

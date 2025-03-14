@@ -54,12 +54,12 @@ class TencentProxy(ChatService):
         return
 
     async def set_model(self):
-        self.origin_model = self.data.get("model", "deepseek-v3")
+        self.origin_model = self.data.get("model", "deepseek-chat")
         self.resp_model = model_proxy.get(self.origin_model, self.origin_model)
 
-        if "deepseek-v3" in self.origin_model:
+        if "deepseek-chat" in self.origin_model:
             self.req_model = "deep_seek_v3"
-        elif "deepseek-R1" in self.origin_model:
+        elif "deepseek-reasoner" in self.origin_model:
             self.req_model = "deep_seek"
         else:
             self.req_model = "deep_seek_v3"
@@ -127,6 +127,7 @@ async def convert_to_openai_stream(input_stream, model="gpt-3.5-turbo", default_
 
     async for line in input_stream:
         line=line.decode('utf-8')
+        print(line)
         # 跳过非数据行和特殊事件
         if not line.startswith("data: ") or "event: " in line:
             continue

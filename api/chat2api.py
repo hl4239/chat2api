@@ -65,15 +65,20 @@ async def process(otherProxy,dynamic_data,request_data, req_token):
     return chat_service, res
 
 
-@app.post(f"/{api_prefix}/v1/chat/completions" if api_prefix else "/v1/chat/completions")
-async def send_conversation(otherProxy:str,dynamic_data :str,request: Request, credentials: HTTPAuthorizationCredentials = Security(security_scheme)):
+@app.post(f"/{api_prefix}/{{otherproxy}}/{{dynamic_data}}/v1/chat/completions" if api_prefix else "/{otherproxy}/{dynamic_data}/v1/chat/completions")
+async def send_conversation(
+    otherproxy: str,
+    dynamic_data: str,
+    request: Request,
+    credentials: HTTPAuthorizationCredentials = Security(security_scheme)
+):
 
     req_token = credentials.credentials
     try:
         request_data = await request.json()
     except Exception:
         raise HTTPException(status_code=400, detail={"error": "Invalid JSON body"})
-    chat_service, res = await async_retry(process, otherProxy,dynamic_data,request_data, req_token)
+    chat_service, res = await async_retry(process, otherproxy,dynamic_data,request_data, req_token)
     try:
         if isinstance(res, types.AsyncGeneratorType):
             background = BackgroundTask(chat_service.close_client)
