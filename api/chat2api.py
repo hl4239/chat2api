@@ -8,6 +8,7 @@ from fastapi.security import HTTPAuthorizationCredentials
 from starlette.background import BackgroundTask
 
 import utils.globals as globals
+from OtherProxy.TencentProxy import TencentProxy
 from app import app, templates, security_scheme
 from chatgpt.ChatService import ChatService
 from chatgpt.authorization import refresh_all_tokens
@@ -27,36 +28,52 @@ async def app_start():
         asyncio.get_event_loop().call_later(0, lambda: asyncio.create_task(refresh_all_tokens(force_refresh=False)))
 
 
-async def to_send_conversation(request_data, req_token):
-    chat_service = ChatService(req_token)
-    try:
-        await chat_service.set_dynamic_data(request_data)
-        await chat_service.get_chat_requirements()
-        return chat_service
-    except HTTPException as e:
-        await chat_service.close_client()
-        raise HTTPException(status_code=e.status_code, detail=e.detail)
-    except Exception as e:
-        await chat_service.close_client()
-        logger.error(f"Server error, {str(e)}")
-        raise HTTPException(status_code=500, detail="Server error")
+async def to_send_conversation(otherProxy,dynamic_data,request_data, req_token):
+    if(otherProxy is  None):
+        chat_service = ChatService(req_token)
+        try:
+            await chat_service.set_dynamic_data(request_data)
+            await chat_service.get_chat_requirements()
+            return chat_service
+        except HTTPException as e:
+            await chat_service.close_client()
+            raise HTTPException(status_code=e.status_code, detail=e.detail)
+        except Exception as e:
+            await chat_service.close_client()
+            logger.error(f"Server error, {str(e)}")
+            raise HTTPException(status_code=500, detail="Server error")
+    else:
+        if(otherProxy=="tencentProxy"):
+            chat_service = TencentProxy(req_token,dynamic_data)
+            try:
+                await chat_service.set_dynamic_data(request_data)
+                return chat_service
+            except HTTPException as e:
+                await chat_service.close_client()
+                raise HTTPException(status_code=e.status_code, detail=e.detail)
+            except Exception as e:
+                await chat_service.close_client()
+                logger.error(f"Server error, {str(e)}")
+                raise HTTPException(status_code=500, detail="Server error")
 
 
-async def process(request_data, req_token):
-    chat_service = await to_send_conversation(request_data, req_token)
+
+async def process(otherProxy,dynamic_data,request_data, req_token):
+    chat_service = await to_send_conversation(otherProxy,dynamic_data,request_data, req_token)
     await chat_service.prepare_send_conversation()
     res = await chat_service.send_conversation()
     return chat_service, res
 
 
 @app.post(f"/{api_prefix}/v1/chat/completions" if api_prefix else "/v1/chat/completions")
-async def send_conversation(request: Request, credentials: HTTPAuthorizationCredentials = Security(security_scheme)):
+async def send_conversation(otherProxy:str,dynamic_data :str,request: Request, credentials: HTTPAuthorizationCredentials = Security(security_scheme)):
+
     req_token = credentials.credentials
     try:
         request_data = await request.json()
     except Exception:
         raise HTTPException(status_code=400, detail={"error": "Invalid JSON body"})
-    chat_service, res = await async_retry(process, request_data, req_token)
+    chat_service, res = await async_retry(process, otherProxy,dynamic_data,request_data, req_token)
     try:
         if isinstance(res, types.AsyncGeneratorType):
             background = BackgroundTask(chat_service.close_client)
