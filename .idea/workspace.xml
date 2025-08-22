@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fdd7e6ae-8fd9-4b0f-8fd8-17c1a38f3ea3" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/app/services/gemini_reverse_2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/utils/JSObfuscatedProcessor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/utils/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dockerignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/build_docker_dev.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/build_docker_main.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OtherProxy/TencentProxy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/chat2api.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/files.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/tokens.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatgpt/ChatService.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatgpt/authorization.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatgpt/chatFormat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatgpt/chatLimit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatgpt/fp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatgpt/proofofWork.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatgpt/refreshToken.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatgpt/turnstile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatgpt/wssClient.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose-warp.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/capsolver.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/chatgpt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/login.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/tokens.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/backend.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/chatgpt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/gpts.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/login.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/reverseProxy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/route.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/share.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/v1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/chatgpt.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/chatgpt_context_1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/chatgpt_context_2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/gpts_context.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/tokens.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/Client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/Logger.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/configs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/globals.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/kv_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/retry.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/version.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;hl4239&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/hl4239/chat2api.git&quot;,
+    &quot;accountId&quot;: &quot;a4933e7d-d4f2-42ff-8e52-39d0f1725b85&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="31SMpx2ViKH2DDWbTCDODte1o1x" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Node.js.m=_b-76282a03.js.executor": "Run",
+    "Python 测试.Python 测试 (test_api.py 内).executor": "Run",
+    "Python.CopilotProxy.executor": "Run",
+    "Python.app.executor": "Run",
+    "Python.gemini_reverse.executor": "Run",
+    "Python.gemini_reverse_2 (1).executor": "Run",
+    "Python.gemini_reverse_2.0.executor": "Run",
+    "Python.js_.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.playwright_reverse.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\HLworkspace\temp\copilot_reverse\app\utils" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.main">
+    <configuration name="m=_b-76282a03.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/app/services/m=_b-76282a03.js" working-dir="$PROJECT_DIR$/app/services">
+      <method v="2" />
+    </configuration>
+    <configuration name="JSObfuscatedProcessor" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="copilot_reverse" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\HLworkspace\temp\copilot_reverse\app\utils\JSObfuscatedProcessor.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="gemini_reverse" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="copilot_reverse" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app/services" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/services/gemini_reverse.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="gemini_reverse_2 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="copilot_reverse" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app/services" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/services/gemini_reverse_2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="copilot_reverse" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.gemini_reverse_2 (1)" />
+        <item itemvalue="Python.gemini_reverse" />
+        <item itemvalue="Python.JSObfuscatedProcessor" />
+        <item itemvalue="Node.js.m=_b-76282a03.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-PY-243.25659.43" />
+        <option value="bundled-python-sdk-181015f7ab06-4df51de95216-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.25659.43" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="fdd7e6ae-8fd9-4b0f-8fd8-17c1a38f3ea3" name="更改" comment="" />
+      <created>1755513206955</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1755513206955</updated>
+      <workItem from="1755513208066" duration="9093000" />
+      <workItem from="1755580779552" duration="23811000" />
+      <workItem from="1755663260156" duration="58720000" />
+      <workItem from="1755822973251" duration="8779000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/services/gemini_reverse.py</url>
+          <line>236</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/copilot_reverse$gemini_reverse_2__1_.coverage" NAME="gemini_reverse_2 (1) 覆盖结果" MODIFIED="1755829476946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/services" />
+    <SUITE FILE_PATH="coverage/copilot_reverse$playwright_reverse.coverage" NAME="playwright_reverse 覆盖结果" MODIFIED="1755582387005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/copilot_reverse$gemini_reverse_2_0.coverage" NAME="gemini_reverse_2 覆盖结果" MODIFIED="1755798376187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/services" />
+    <SUITE FILE_PATH="coverage/copilot_reverse$.coverage" NAME=" 覆盖结果" MODIFIED="1755598865480" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/copilot_reverse$app.coverage" NAME="app 覆盖结果" MODIFIED="1755596452485" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/copilot_reverse$main.coverage" NAME="main 覆盖结果" MODIFIED="1755831220150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
+    <SUITE FILE_PATH="coverage/copilot_reverse$gemini_reverse.coverage" NAME="gemini_reverse 覆盖结果" MODIFIED="1755829191583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/services" />
+    <SUITE FILE_PATH="coverage/copilot_reverse$CopilotProxy.coverage" NAME="CopilotProxy 覆盖结果" MODIFIED="1755586493972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OtherProxy" />
+    <SUITE FILE_PATH="coverage/copilot_reverse$js_.coverage" NAME="js_ 覆盖结果" MODIFIED="1755790971801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/test" />
+  </component>
+</project>
